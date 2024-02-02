@@ -13,7 +13,7 @@ const Home = () => {
     useEffect( ()=>{ //Cannot apply async function right here 
         //async function - inside await axiox ....
         async function fetchData() { //Create a async function inside the useEffect
-          const response =  await axios.get('http://localhost:3001/route')
+          const response =  await axios.get('https://duyngotest.onrender.com/route')
           const data = response.data;
           if(data) dispatch({
             type:'GET_ROUTE',

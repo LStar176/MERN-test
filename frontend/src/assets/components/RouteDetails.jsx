@@ -7,7 +7,7 @@ import {formatDistanceToNow, format} from 'date-fns'
 const RouteDetails = ({route}) => {
   const {state,dispatch} = useRouteContext();
   const handleDelete = async()=>{
-    const response  = await axios(`http://localhost:3001/route/`+ route._id,{
+    const response  = await axios(`https://duyngotest.onrender.com/route/`+ route._id,{
       method: 'DELETE'
     })
     // .then(res => console.log(res.data))

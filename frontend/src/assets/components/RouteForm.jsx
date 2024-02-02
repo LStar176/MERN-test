@@ -15,7 +15,7 @@ const RouteFormApp = () => {
         event.preventDefault() 
         const route = {title, content}
         
-         await axios.post("http://localhost:3001/route/",route)
+         await axios.post("https://duyngotest.onrender.com/route/",route)
         .then(response=>{
           console.log(response.data)
             setError(null)
