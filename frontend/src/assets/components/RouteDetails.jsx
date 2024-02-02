@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios';
 //Context
 import { useRouteContext } from '../hook/useRouteContext.js';
-import {formatDistanceToNow, format} from 'date-fns'
+// import {formatDistanceToNow, format} from 'date-fns'
 
 const RouteDetails = ({route}) => {
   const {state,dispatch} = useRouteContext();
@@ -24,7 +24,7 @@ const RouteDetails = ({route}) => {
     <div className='route-details'>
         <strong><h4>{route.title}</h4></strong>
         <p>{route.content}</p>
-        <p>{format(new Date(route.createAt))}</p>
+        {/* <p>{format(new Date(route.createAt))}</p> */}
         <span onClick={handleDelete}>X</span>
     </div>
   )
