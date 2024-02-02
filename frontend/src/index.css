@@ -1,0 +1,142 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Layout */
+:root {
+  --primary: #1aac83;
+  --primary-300: #1aac8390;
+
+  --error: #e7195a;
+  --error-300:#ffefef;
+}
+body {
+ background: #f1f1f1;
+ margin: 0;
+ font-family: "Poppins";
+}
+
+/* Header - Navbar*/
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px; /* responsive*/
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+/* pages */
+.pages {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px; /* responsive*/
+} 
+
+/* Home Page */
+.home{
+  display: flex;
+  justify-content: space-between;
+}
+
+.routes{
+  flex:3;
+  padding-right: 50px;
+}
+form {
+  flex:1;
+  padding-left: 50px;
+}
+.route-details {
+  background-color: #fff;
+  border-radius: 4px; /* bo tron */
+  margin: 20px auto; /* cach deu 2 ben */
+  padding: 20px;
+  position: relative; /* dieu chinh the span ben trong */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.route-details h4{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: var(--primary)
+}
+.route-details p{
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+.route-details span{
+    position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f1f1f1;
+  padding: 6px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px; 
+} 
+.route-details span:hover{
+  background: #dbdbdb
+}
+
+label, input {
+  display: block;
+}
+input {
+  /* vi tri */
+  /* kich thuoc */
+  width: 100%;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  /* noi ddung */
+  /* trang tri */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  /* vi tri */
+  /* kich thuoc */
+  padding: 10px;
+
+  /* noi dung */
+  background: var(--primary);
+  color: #fff;
+  font-family: "Poppins";
+  /* trang tri */
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--primary-300)
+}
+
+div.error {
+  /* kich thuoc */
+  margin: 20px 0;
+  padding: 10px;
+  /* noi dung */
+  color: var(--error);
+  background: var(--error-300);
+  /* trang tri */
+  border-radius: 4px;
+  border: 1px solid var(--error)
+}
+
+input.error {
+  border: 1px solid var(--error);
+  background: var(--error-300)
+}
